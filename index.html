@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-machine">
+        <div class="screen">
+            <div class="display" id="display">
+                <div id="loginScreen">
+                    <h2>Welcome to JS ATM</h2>
+                    <div><small>Use Default user to logIn</small><br>
+                        <span>Default PIN: 1234</span></div>
+                    <p>Enter PIN: <span id="pinDisplay">____</span></p>
+                </div>
+
+                <div id="mainMenu" class="hidden">
+                    <h2>Main Menu</h2>
+                    <p>1. Balance Inquiry</p>
+                    <p>2. Cash Withdrawal</p>
+                    <p>3. Deposit Funds</p>
+                    <p>4. Transfer Funds</p>
+                    <p>5. Exit</p>
+                </div>
+
+                <div id="transactionScreen" class="hidden"></div>
+            </div>
+            <div class="keypad">
+                <button onclick="handleInput('1')">1</button>
+                <button onclick="handleInput('2')">2</button>
+                <button onclick="handleInput('3')">3</button>
+                <button onclick="handleInput('4')">4</button>
+                <button onclick="handleInput('5')">5</button>
+                <button onclick="handleInput('6')">6</button>
+                <button onclick="handleInput('7')">7</button>
+                <button onclick="handleInput('8')">8</button>
+                <button onclick="handleInput('9')">9</button>
+                <button class="clear-btn" onclick="handleInput('C')">C</button>
+                <button onclick="handleInput('0')">0</button>
+                <button class="enter-btn" onclick="handleInput('Enter')">Enter</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
